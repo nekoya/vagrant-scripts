@@ -1,7 +1,7 @@
 #
 # MySQL
 #
-PASSWD=${1:-"''"}
+PASSWD=${1:-"mysql"}
 if [ ! -f /usr/sbin/mysqld ];then
     echo "*** Install MySQL ***"
 
