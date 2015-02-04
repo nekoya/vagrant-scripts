@@ -82,3 +82,11 @@ Select APT mirror `jaist.ac.jp`.
 ```
 config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/select-jaist-apt-mirror.sh"
 ```
+
+## timezone.sh
+
+Set timezone, default as `Asia/Tokyo`.
+
+```
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/timezone.sh"
+```
