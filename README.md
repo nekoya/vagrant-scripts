@@ -5,7 +5,7 @@
 Install ag (The Silver Searcher) on Ubuntu 12.04 lts.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/select-jaist-apt-mirror.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/select-jaist-apt-mirror.sh"
 ```
 
 ## apt-get.sh
@@ -13,7 +13,7 @@ config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/v
 Install package(s) through `apt-get install`.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/apt-get.sh", :args => ["git"]
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/apt-get.sh", :args => ["git"]
 ```
 
 ## jenkins.sh
@@ -21,17 +21,17 @@ config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/v
 Install Jenkins. Require to import `openjdk.sh` in advance.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/openjdk.sh"
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/jenkins.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/openjdk.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/jenkins.sh"
 ```
 
-## jenkins\_plugins.sh
+## jenkins-plugins.sh
 
 Install Jenkins plugin(s). Require to import `jenkins.sh` in advance.
 
 ```
 config.vm.provision :shell,
-  :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/jenkins_plugins.sh",
+  :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/jenkins-plugins.sh",
   :args => ["cobertura", "git", "ghprb", "slack", "emotional-jenkins-plugin"]
 ```
 
@@ -40,14 +40,14 @@ config.vm.provision :shell,
 Install MySQL.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/mysql.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/mysql.sh"
 ```
 
 You can specify root password through `args`.
 
 ```
 config.vm.provision :shell,
-  :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/mysql.sh"
+  :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/mysql.sh"
   :args => "your password"
 ```
 
@@ -56,7 +56,7 @@ config.vm.provision :shell,
 Install nginx from official mainline apt repository.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/nginx.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/nginx.sh"
 ```
 
 ## openjdk.sh
@@ -64,15 +64,15 @@ config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/v
 Install OracleJDK7.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/openjdk.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/openjdk.sh"
 ```
 
-## purge\_nano.sh
+## purge-nano.sh
 
 Set vim as default editor and purge `nano`.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/purge_nano.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/purge-nano.sh"
 ```
 
 ## select-jaist-apt-mirror.sh
@@ -80,5 +80,5 @@ config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/v
 Select APT mirror `jaist.ac.jp`.
 
 ```
-config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/select-jaist-apt-mirror.sh"
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/select-jaist-apt-mirror.sh"
 ```
