@@ -4,6 +4,8 @@
 
 Install ag (The Silver Searcher) on Ubuntu 12.04 lts.
 
+Run `apt-get install silversearcher-ag` simply if you use Ubuntu 13.10 or newer.
+
 ```
 config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant-scripts/master/select-jaist-apt-mirror.sh"
 ```
