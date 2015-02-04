@@ -67,6 +67,14 @@ Install OracleJDK7.
 config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/openjdk.sh"
 ```
 
+## purge\_nano.sh
+
+Set vim as default editor and purge `nano`.
+
+```
+config.vm.provision :shell, :path => "https://raw.githubusercontent.com/nekoya/vagrant_scripts/master/purge_nano.sh"
+```
+
 ## select-jaist-apt-mirror.sh
 
 Select APT mirror `jaist.ac.jp`.
